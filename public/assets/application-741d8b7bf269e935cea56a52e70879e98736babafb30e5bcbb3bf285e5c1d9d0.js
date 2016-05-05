@@ -11583,7 +11583,10 @@ return jQuery;
 $(document).on('ready', function(){
 
   $('body').append('<h1>Asset Pipeline Poem</h1>');
-
+  $('h1').on("click", function(){
+    console.log('hi');
+    $('img').attr({ src: "/assets/duck-2c4aa0588c12623c5596ed78e295373df63d09fbbb3b1a1a8c6b86e2f76d1f4b.gif" });
+  });
 });
 $(document).on('ready', function(){
 
@@ -11622,7 +11625,7 @@ $(document).on('ready', function(){
   }
 
   $('body').append($metaDiv);
-
+  
 });
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
